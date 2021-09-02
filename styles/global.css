@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #5c6ac4;
+  --color-secondary: #ecc94b;
+  --color-text: #4b5563;
+  /* ... */
+}
+
+@layer components {
+  .btn {
+    @apply py-2;
+  }
+  .option {
+    @apply cursor-pointer hover:bg-gray-100 transition duration-200 ease-out p-2 rounded-lg;
+  }
+}
+
+@layer base {
+  h1 {
+    /* @apply; */
+  }
+}
